@@ -1,6 +1,7 @@
--- Adjust column names after opening the CSV to confirm headers.
--- Example idea:
--- SELECT "Country/Territory" AS country, "2022 Population" AS population
--- FROM dataset_table
--- ORDER BY "2022 Population" DESC
--- LIMIT 5;
+-- Top 5 most populated countries in 2022
+SELECT 
+    Country, 
+    "2022 Population" AS population
+FROM world_population
+ORDER BY "2022 Population" DESC
+LIMIT 5;
